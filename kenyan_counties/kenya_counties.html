@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Counties</title>
+
+    <link rel="stylesheet" href="./css/leaflet.css">
+    <link rel="stylesheet" href="./css/kenya_style.css">
+</head>
+
+<body>
+
+    <div id="main_header">
+        <h1>Kenya Counties Map</h1>
+        <div id="header_desc">
+            <div class="header_info">
+                <h4>Kenya Counties</h4>
+                <br>
+                <select id='counties_options'></select>
+            </div>
+            <div class="header_info">
+                <h4>Minimum value of avghhsz</h4>
+                <br>
+                <p id="min_avghhsz" style="text-align:center;"></p>
+            </div>
+            <div class="header_info">
+                <h4>Maximum value of avghhsz</h4>
+                <br>
+                <p id="max_avghhsz" style="text-align:center;"></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="main_content">
+        <div id="counties_map"></div>
+    </div>
+
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="./js/leaflet.js"></script>
+    <script src="./js/kenya_script.js"></script>
+
+</body>
+
+</html>
